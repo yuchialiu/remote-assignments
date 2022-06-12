@@ -1,1 +1,60 @@
+.title {
+  background-color: grey;
+  justify-content: flex-start;
+}
+header {
+  height: 8rem;
+  background-color: #FFB226;
+}
 
+body {
+  text-align: center;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  min-height: 50vh;
+  justify-content: center;
+}
+.item-1 {
+  box-sizing: content-box;
+  align-self: center;
+}
+.item-2 {
+  box-sizing: content-box;
+  align-self: center;
+}
+.item-3 {
+  box-sizing: content-box;
+  align-self: center;
+}
+.item-4 {
+  box-sizing: content-box;
+  align-self: center;
+}
+.button {
+  background-color: #FFFFCC;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+  @media (min-width: 1200px) {
+	  .container {
+	    display: flex;
+	  }
+	  
+	  .header {
+	    align-items: center;
+	  }
