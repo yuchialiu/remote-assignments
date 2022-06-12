@@ -1,41 +1,60 @@
-.title {
-  background-color: grey;
-  justify-content: flex-start;
+.topnav {
+  background-color: #E0E0E0;
+  height: 50px;
+  text-align: left;
+  font-size: 20px;
 }
-header {
-  height: 8rem;
-  background-color: #FFB226;
+.line {
+  display: inline-flex;
+  padding: 10px;
 }
-
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  float: left;
+}
+.list ul {
+  margin: 0 auto;
+}
+.list {
+  display: inline-flex;
+}
+.item {
+  padding: 10px;
+}
+.menu {
+  float: right;  
+  text-align: center;
+}
+.menu a:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+.sub {
+  text-align: center;
+}
 body {
   text-align: center;
 }
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  margin: auto;
+header {
+  height: 180px;
+  background-color: #FFB226;
+  text-align: center;
 }
 
-.container {
-  display: flex;
-  min-height: 50vh;
-  justify-content: center;
+.outer {
+  border: 1px;
+  width: 100%;
+  float: left;
 }
-.item-1 {
+.inner {
   box-sizing: content-box;
-  align-self: center;
-}
-.item-2 {
-  box-sizing: content-box;
-  align-self: center;
-}
-.item-3 {
-  box-sizing: content-box;
-  align-self: center;
-}
-.item-4 {
-  box-sizing: content-box;
-  align-self: center;
+  margin: 10px;
+  float: left;
+  width: 45%;
+  border: 2px solid gray;
+  background-color: #CCE5FF;
 }
 .button {
   background-color: #FFFFCC;
@@ -51,10 +70,6 @@ body {
 
 
   @media (min-width: 1200px) {
-	  .container {
+	  .outer {
 	    display: flex;
-	  }
-	  
-	  .header {
-	    align-items: center;
 	  }
