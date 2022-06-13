@@ -47,6 +47,7 @@ header {
   border: 1px;
   width: 100%;
   float: left;
+  max-width: 1200px;
 }
 .inner {
   box-sizing: content-box;
@@ -67,10 +68,7 @@ header {
   font-size: 16px;
 }
 
-
-
   @media screen and (min-width: 1200px) {
 	  .outer {
 	    display: flex;
-		width: 1200px;
 	  }

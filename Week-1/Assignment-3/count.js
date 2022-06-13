@@ -6,7 +6,7 @@ function countAandB(input) {
       count++;
     }
   }
-  console.log(count)
+  return count
 }
 
 
@@ -14,10 +14,8 @@ function toNumber(input) {
 // your code here
 	var arr = []
 	for (i = 0; i < input.length; i++) {
-    console.log(input[i].charCodeAt(0)-96)
     arr.push(input[i].charCodeAt(0)-96)
   }
-  
   return arr
 }
 
