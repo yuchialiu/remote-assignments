@@ -69,7 +69,8 @@ header {
 
 
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
 	  .outer {
 	    display: flex;
+		width: 1200px;
 	  }
