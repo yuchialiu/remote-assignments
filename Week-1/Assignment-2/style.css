@@ -51,7 +51,7 @@ header {
 	width: 100%;
 	max-width: 1200px;
 	justify-content: center;
-	margin: auto;
+	margin: 0 auto;
 }
 .inner {
 	display: block;
