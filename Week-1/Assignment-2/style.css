@@ -47,11 +47,11 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	border: 1px;
 	height: 200px;
 	width: 100%;
 	max-width: 1200px;
-    justify-content: space-around;
+	justify-content: center;
+	margin: auto;
 }
 .inner {
 	display: block;
