@@ -44,18 +44,22 @@ header {
 }
 
 .outer {
-  border: 1px;
-  width: 100%;
-  float: left;
-  max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	border: 1px;
+	height: 200px;
+	width: 100%;
+	max-width: 1200px;
+    justify-content: space-around;
 }
 .inner {
-  box-sizing: content-box;
-  margin: 10px;
-  float: left;
-  width: 45%;
-  border: 2px solid gray;
-  background-color: #CCE5FF;
+	display: block;
+	margin: 5px;
+	width: 40%;
+	border: 2px solid gray;
+	background-color: #CCE5FF;
+
 }
 .button {
   background-color: #FFFFCC;
@@ -69,6 +73,7 @@ header {
 }
 
   @media screen and (min-width: 1200px) {
-	  .outer {
+	  .outer,
+	  .list {
 	    display: flex;
 	  }
