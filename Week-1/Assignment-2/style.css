@@ -64,12 +64,17 @@ header {
 .button {
   background-color: #FFFFCC;
   border: none;
-  color: white;
+  color: black;
   padding: 12px 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.listContainer {
+	display: none;
+	
 }
 
   @media (max-width: 1200px) {
