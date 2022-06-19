@@ -1,16 +1,11 @@
 function avg(data) {
     // your code here
-    
-     /*   let arr = products; 
-        for ( let prop in arr ) {
-            console.log(Object.value(arr.[price])/ Object.keys(arr).length);
-        }*/
         let totalPrice = 0;
         for ( let index in data.products ) {
-            totalPrice += data.products[index].price            
+            totalPrice += data.products[index].price ;           
         }
 
-        return totalPrice/data.size
+        return totalPrice/data.size;
     
     }
     console.log(

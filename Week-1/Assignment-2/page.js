@@ -10,8 +10,10 @@ btnUpdate.addEventListener('click', () => {
 	const listContainer = document.querySelector('.listContainer');
 	
 	if (listContainer.style.display === 'none') {
+		btnUpdate.textContent = 'See Less';
 		listContainer.style.display = 'block';
 	}	else {
+		btnUpdate.textContent = 'See more';
 		listContainer.style.display = 'none';
 	}
 });
