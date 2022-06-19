@@ -15,17 +15,17 @@ let input1 = ["a", "b", "c", "a", "c", "a", "x"];
 console.log(count(input1));
 
 // should print {a:3, b:1, c:2, x:1}
+
 function groupByKey(input) {
     // your code here
     let obj = {};
-    for ( i=0; i<input.length; i++) {
+    for ( let i=0; i<input.length; i++) {
         let element = input[i] ;
-        if ( obj[element.key] == false ) { 
-            element.key = 0;
+        if ( element.key in obj == false ) { 
+            obj[element.key] = 0;
         } 
         obj[element.key] = obj[element.key] + element.value;
     }
-
     return obj;
 }
 
