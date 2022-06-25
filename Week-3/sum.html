@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Enter a number</h1>
+    <div>
+      <input type="text" id="number" name="number" />
+      <button id="check-btn" onclick="requestSum()">submit</button>
+    </div>
+    <div>result</div>
+    <div id="sum_resp"></div>
+
+    <script>
+      function requestSum() {
+        let input = document.getElementById("number").value;
+
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("sum_resp").innerHTML = this.responseText;
+          }
+        };
+
+        xhr.open("GET", "./data?number=" + input);
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>

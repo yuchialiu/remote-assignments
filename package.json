@@ -1,0 +1,23 @@
+{
+  "name": "remote-assignments",
+  "version": "1.0.0",
+  "description": "week3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuchialiu/remote-assignments.git"
+  },
+  "author": "Ellie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuchialiu/remote-assignments/issues"
+  },
+  "homepage": "https://github.com/yuchialiu/remote-assignments#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1"
+  }
+}
