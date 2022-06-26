@@ -9,7 +9,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/data", function (req, res) {
-  let numberStr = req.query.number;
+  let numberStr = req.query.number; // the number is string by default
   if (!numberStr) {
     res.end("Lack of Parameter");
   } else {
@@ -26,7 +26,7 @@ app.get("/myName", function (req, res) {
   let name = req.cookies.userName;
 
   if (!name) {
-    res.sendFile(path.join(__dirname + "/name.html"));
+    res.sendFile(path.join(__dirname + "/name.html")); //send html file on get request
   } else {
     res.end(name);
   }
@@ -38,6 +38,7 @@ app.get("/trackName", function (req, res) {
   res.redirect("/myName");
 });
 
+// Update Express project to serve static files.
 app.use(express.static("Week-3"));
 
 app.listen(3000, () => {
