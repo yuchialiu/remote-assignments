@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <h1>Enter your data</h1>
+    <div>
+      <input type="text" id="email" />
+      <input type="text" id="password" />
+      <button id="sign-up" onclick="signup()">signup</button>
+      <button id="sign-in" onclick="signin()">signin</button>
+    </div>
+    <div>result</div>
+    <div id="resp"></div>
+
+    <!-- send an HTTP request to backend API by AJAX -->
+    <script>
+      function signup() {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        var data = JSON.stringify({
+          email: email,
+          password: password,
+        });
+
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (this.readyState == 4) {
+            if (this.status == 200) {
+              // redirect member page
+              window.location.replace("/member");
+            } else {
+              // return error message
+              document.getElementById("resp").innerHTML = this.responseText;
+            }
+          }
+        };
+
+        xhr.open("POST", "./signup");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(data);
+      }
+
+      function signin() {
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        var data = JSON.stringify({
+          email: email,
+          password: password,
+        });
+
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (this.readyState == 4) {
+            if (this.status == 200) {
+              // redirect member page
+              window.location.replace("/member");
+            } else {
+              // return error message
+              document.getElementById("resp").innerHTML = this.responseText;
+            }
+          }
+        };
+
+        xhr.open("POST", "./signin");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(data);
+      }
+    </script>
+  </body>
+</html>
